@@ -63,7 +63,7 @@ a:hover, a:visited, a:active, a:focus{
 
 .wrapper {
   background-color: white;
-  min-height: 100% - 60px;
+  min-height: 100%;
   height: auto;
   height: 100%;
   margin: 0 auto -4em;
@@ -87,8 +87,6 @@ a:hover, a:visited, a:active, a:focus{
   color: #aaaaaa;
   display: inline-block;
   font-size: 15px;
-  /*margin: 16px 4px;*/
-  /*padding: 4px;*/
   color: white;
   text-align: center;
 }
