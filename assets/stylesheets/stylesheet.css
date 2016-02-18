@@ -4,7 +4,7 @@
 
 html, body {
   height: 100%;
-  background-color: #333333
+  background-color: #1d1f21
 }
 
 body
@@ -25,7 +25,7 @@ a:hover, a:visited, a:active, a:focus{
   text-align: center;
   width: 100%;
   top: 37vh;
-
+  color: #eeeeee;
 }
 .navbar {
   float: right;
@@ -36,33 +36,29 @@ a:hover, a:visited, a:active, a:focus{
 }
 
 .navbar a {
-  color: gray;
-}
-
-.navbar a:hover {
-  color: #333333;
-}
-
-.navbar a:first-child{
-  margin: 6px;
+  transition: color .25s ease;
+  color: #eeeeee;
   padding: 6px;
-  border-right: solid;
-  border-width: thin;
-  border-color: #aaaaaa;
   text-align: center;
 }
 
-.navbar a:first-child:hover {
+.navbar a:hover {
+  color: gray;
+  border-color: #aaaaaa;
+}
+
+.navbar a {
+  border-right: solid;
+  border-width: thin;
   border-color: #aaaaaa;
 }
 
 .navbar a:last-child {
-  margin-left: -5px;
+  border-right: none;
 }
 
-
 .wrapper {
-  background-color: white;
+  background-color: #1d1f21;
   min-height: 100%;
   height: auto;
   height: 100%;
@@ -75,7 +71,6 @@ a:hover, a:visited, a:active, a:focus{
 
 .footer {
   box-shadow: 0 -10px -10px red;
-  background-color: #333333;
   text-align: center;
   margin: auto;
   font-weight: 100;
@@ -84,40 +79,23 @@ a:hover, a:visited, a:active, a:focus{
 }
 
 .footer a {
-  color: #aaaaaa;
+  transition: color 0.25s ease;
   display: inline-block;
   font-size: 15px;
-  color: white;
+  color: #eeeeee;
   text-align: center;
 }
 
-.footer a:hover {
-  color: gray;
+#github:hover {
+  color: #6d3353;
+}
+
+#linkedin:hover {
+  color: #0074b2;
 }
 
 .footer i {
   margin-top: .5em;
-  margin-left: 5px;
-  margin-right: 5px;
-  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-
-.footer i:hover{
-  color: white;
-}
-
-
-/*
-.footer a:first-child, .footer a:nth-child(2) {
-  border-right: solid;
-  border-width: thin;
-  border-color: #aaaaaa;
-}
-
-.footer a:nth-child(2), .footer a:nth-child(3) {
-  margin-left: -6px;
-}
-
-.footer a:last-child {
-  margin: 0;
-}*/
